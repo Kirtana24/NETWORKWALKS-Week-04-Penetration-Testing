@@ -153,6 +153,10 @@ These observations established a foundation for the subsequent security assessme
 
 The objective of this module was to understand PDF password protection, perform password auditing on the provided training documents, and examine document metadata.
 
+Lab reports available 
+
+<img width="1057" height="855" alt="image" src="https://github.com/user-attachments/assets/8b47edc2-1866-4c39-b35c-2b5b1b5ac22d" />
+
 ### 4.9 Hash Extraction
 
 PDF password hashes were extracted for use in the password auditing process.
