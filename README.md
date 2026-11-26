@@ -258,7 +258,7 @@ The assessment focused on documenting the exposure without downloading or disclo
 <img width="1881" height="750" alt="image" src="https://github.com/user-attachments/assets/9d5f074b-deaa-4773-abca-174a06115f2a" />
 <img width="1882" height="337" alt="image" src="https://github.com/user-attachments/assets/d9aaf9d3-c526-4d0a-ad16-b520f4d9f465" />
 
-##5. Key Learning Outcomes
+###5. Key Learning Outcomes
 
 Understood the initial reconnaissance process.
 
@@ -272,6 +272,6 @@ Understood the security risks associated with publicly accessible backup files.
 
 Improved technical documentation and vulnerability reporting skills.
 
-##6. Conclusion
+###6. Conclusion
 
 Week 04 provided practical exposure to reconnaissance, document security assessment, information disclosure analysis, and penetration testing documentation. These exercises strengthened my understanding of identifying potential security weaknesses and communicating findings responsibly.
