@@ -71,6 +71,7 @@ The practical environment was prepared using Kali Linux running inside Oracle Vi
 The system configuration, network connectivity, installed utilities, and Python version were checked before beginning the reconnaissance activities.
 
 **Screenshot 1: Initial Environment Setup**
+
 <img width="912" height="706" alt="image" src="https://github.com/user-attachments/assets/f6c90d7e-f8b4-4724-9680-d002530edac0" />
 <img width="692" height="330" alt="image" src="https://github.com/user-attachments/assets/9fe80a9c-25d2-4352-a3d7-0090646a9f4b" />
 
@@ -82,6 +83,7 @@ The WHOIS utility was used to retrieve publicly available domain registration in
 `whois medirozahospital.com`
 
 **Screenshot 2: WHOIS Lookup**
+
 <img width="537" height="182" alt="image" src="https://github.com/user-attachments/assets/5251a561-530b-4bab-8e41-a9ddcd5aa009" />
 <img width="922" height="765" alt="image" src="https://github.com/user-attachments/assets/59394888-309b-49e1-b4c1-dd54ad6a3c64" />
 
@@ -98,18 +100,23 @@ The following records were examined:
 - TXT record
 
 **Screenshot 3: Nslookup Results**
+
 <img width="321" height="151" alt="image" src="https://github.com/user-attachments/assets/55e802d6-6401-4184-934f-48824b89f7ef" />
 
 **Screenshot 4: DNS A Record**
+
 <img width="600" height="332" alt="image" src="https://github.com/user-attachments/assets/ea91bc18-30eb-4355-803d-b9bff822e3e5" />
 
 **Screenshot 5: DNS NS Record**
+
 <img width="636" height="377" alt="05_DNS_NS_Records" src="https://github.com/user-attachments/assets/e54ec6cf-2d7d-4e75-b3bb-2571f5bbaca7" />
 
 **Screenshot 6: DNS MX Record**
+
 <img width="686" height="397" alt="image" src="https://github.com/user-attachments/assets/6a807d90-6c92-4575-9914-e06ed40f8d79" />
 
 **Screenshot 7: DNS TXT Record**
+
 <img width="937" height="380" alt="image" src="https://github.com/user-attachments/assets/14dc0254-29e8-433f-9f18-27aca84d9686" />
 
 ### 4.5 HTTP Header Analysis
@@ -119,6 +126,7 @@ cURL was used to examine the HTTP response headers returned by the target websit
 This helped identify server information, response status, and other publicly available HTTP header details.
 
 **Screenshot 8: HTTP Header Analysis**
+
 <img width="427" height="181" alt="image" src="https://github.com/user-attachments/assets/802ecc32-1418-489b-8133-7b16fa624994" />
 
 ### 4.6 Website Technology Identification
@@ -128,6 +136,7 @@ WhatWeb was used to identify technologies and components associated with the tar
 This provided an overview of the publicly detectable web technologies.
 
 **Screenshot 9: WhatWeb Scan**
+
 <img width="937" height="97" alt="image" src="https://github.com/user-attachments/assets/f60672c7-6292-480b-902f-05e25425eaf5" />
 
 ### 4.7 M1 Observations
@@ -144,16 +153,6 @@ These observations established a foundation for the subsequent security assessme
 
 The objective of this module was to understand PDF password protection, perform password auditing on the provided training documents, and examine document metadata.
 
-### 4.9 PDF Password Analysis
-
-Three password-protected PDF documents were provided for the practical exercise.
-
-The documents were examined to understand password protection and the process of testing password candidates using password auditing utilities.
-
-**Screenshot 1: PDF Password Analysis**
-
-![PDF Password Analysis](M2-Data-Extraction/Screenshots/01_PDF_Password_Analysis.png)
-
 ### 4.10 Hash Extraction
 
 PDF password hashes were extracted for use in the password auditing process.
@@ -161,26 +160,21 @@ PDF password hashes were extracted for use in the password auditing process.
 The extracted hash represents the information required by compatible auditing tools to test password candidates. It is not the original password itself.
 
 **Screenshot 2: PDF Hash Extraction**
+
 <img width="1896" height="867" alt="image" src="https://github.com/user-attachments/assets/9a32079c-c928-4bfd-a71e-b8867d128b43" />
 <img width="1901" height="870" alt="image" src="https://github.com/user-attachments/assets/109951e1-8bea-4032-b873-62564c3f0ed2" />
-<img width="1901" height="870" alt="image" src="https://github.com/user-attachments/assets/74b928a5-ebd2-4f56-b1cd-a40f7c9d60e0" />
-
-![PDF Hash Extraction](M2-Data-Extraction/Screenshots/02_PDF_Hash_Extraction.png)
-
-### 4.11 John the Ripper
-
-John the Ripper was used to perform password auditing against the extracted PDF hash.
-
-The tool tested password candidates to evaluate the strength of the document's password protection.
 
 **Screenshot 3: Password Audit**
 patient record 1 password cracked
+
 <img width="1896" height="862" alt="image" src="https://github.com/user-attachments/assets/ce5baf43-13c2-4eda-a8f2-c86c3725ef4f" />
 
 patient record 2 password cracked
+
 <img width="905" height="557" alt="image" src="https://github.com/user-attachments/assets/3b979be8-bdc9-43de-888e-85caa6054b78" />
 
 patient record 3 password cracked
+
 <img width="985" height="472" alt="image" src="https://github.com/user-attachments/assets/ecb66706-12c9-4b72-ac42-24fd08d33a85" />
 
 ### 4.12 PDF Decryption Using QPDF
@@ -192,18 +186,15 @@ The decrypted output was saved separately for further examination.
 **Screenshot 4: PDF Decryption Using QPDF**
 <img width="937" height="727" alt="image" src="https://github.com/user-attachments/assets/44f023ce-2d0a-4778-acd5-ca667198b3b4" />
 
-![QPDF Decryption](M2-Data-Extraction/Screenshots/04_QPDF_Decryption.png)
-
 ### 4.13 PDF Metadata Examination
 
 ExifTool was used to examine the metadata of the PDF document.
 
 Metadata analysis helps identify document properties and potentially sensitive information embedded within files.
 
-**Screenshot 5: PDF Metadata Analysis**
-<img width="907" height="370" alt="image" src="https://github.com/user-attachments/assets/f8e5a24a-386c-4386-a596-512582747f3f" />
+**Screenshot 5: PDF Metadata Analysis
 
-![PDF Metadata](M2-Data-Extraction/Screenshots/05_PDF_Metadata_Analysis.png)
+<img width="907" height="370" alt="image" src="https://github.com/user-attachments/assets/f8e5a24a-386c-4386-a596-512582747f3f" />
 
 ### 4.14 M2 Observations
 
@@ -232,9 +223,8 @@ The following paths were identified:
 The presence of these entries indicates disclosed directory names but does not independently confirm that the directories are publicly accessible.
 
 **Screenshot 1: Robots.txt Analysis**
-<img width="696" height="375" alt="image" src="https://github.com/user-attachments/assets/fc78d362-4beb-43fd-a7f1-0bf664e5d641" />
 
-![Robots.txt Analysis](M3-Critical-Data-Exposure/Screenshots/08_Robots_txt_Analysis.png)
+<img width="696" height="375" alt="image" src="https://github.com/user-attachments/assets/fc78d362-4beb-43fd-a7f1-0bf664e5d641" />
 
 ### 4.17 Directory Listing Assessment
 
@@ -243,14 +233,11 @@ The `/old/` directory was investigated to determine whether the web server expos
 Directory listing can reveal filenames and resources that should not be publicly accessible.
 
 **Screenshot 2: Old Directory Listing**
-<img width="1897" height="297" alt="image" src="https://github.com/user-attachments/assets/5b3bb7a0-3af4-44c8-9a81-aaa3f53ecaeb" />
 
+<img width="1897" height="297" alt="image" src="https://github.com/user-attachments/assets/5b3bb7a0-3af4-44c8-9a81-aaa3f53ecaeb" />
 
 **Screenshot 2: Exposed Directory Listing**
 <img width="1897" height="622" alt="image" src="https://github.com/user-attachments/assets/d2c8987c-183f-4651-a444-fdd3e0ae3604" />
-
-
-![Old Directory Listing](M3-Critical-Data-Exposure/Screenshots/11_Old_Directory_Listing.png)
 
 ### 4.18 Database Backup Exposure
 
