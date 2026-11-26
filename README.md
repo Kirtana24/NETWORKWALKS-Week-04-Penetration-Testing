@@ -57,6 +57,8 @@ The exercises were performed using Kali Linux in a controlled training environme
 # 4. Practical Implementation
 
 ## M1 – Initial Access and Reconnaissance
+Target Website :
+<img width="1897" height="865" alt="image" src="https://github.com/user-attachments/assets/fe44ef04-a41b-4a7c-9eca-22d3ddaf62f2" />
 
 ### 4.1 Objective
 
@@ -84,8 +86,6 @@ The WHOIS utility was used to retrieve publicly available domain registration in
 <img width="922" height="765" alt="image" src="https://github.com/user-attachments/assets/59394888-309b-49e1-b4c1-dd54ad6a3c64" />
 
 
-![WHOIS Lookup](M1-Initial-Access/Screenshots/02_WHOIS_Lookup.png)
-
 ### 4.4 DNS Enumeration
 
 DNS enumeration was performed using Nslookup and Dig to identify the domain's IP address and associated DNS records.
@@ -100,27 +100,17 @@ The following records were examined:
 **Screenshot 3: Nslookup Results**
 <img width="321" height="151" alt="image" src="https://github.com/user-attachments/assets/55e802d6-6401-4184-934f-48824b89f7ef" />
 
-![Nslookup Results](M1-Initial-Access/Screenshots/03_Nslookup_Results.png)
-
 **Screenshot 4: DNS A Record**
 <img width="600" height="332" alt="image" src="https://github.com/user-attachments/assets/ea91bc18-30eb-4355-803d-b9bff822e3e5" />
-
-![DNS A Record](M1-Initial-Access/Screenshots/04_DNS_A_Record.png)
 
 **Screenshot 5: DNS NS Record**
 <img width="636" height="377" alt="05_DNS_NS_Records" src="https://github.com/user-attachments/assets/e54ec6cf-2d7d-4e75-b3bb-2571f5bbaca7" />
 
-![DNS NS Record](M1-Initial-Access/Screenshots/05_DNS_NS_Record.png)
-
 **Screenshot 6: DNS MX Record**
 <img width="686" height="397" alt="image" src="https://github.com/user-attachments/assets/6a807d90-6c92-4575-9914-e06ed40f8d79" />
 
-![DNS MX Record](M1-Initial-Access/Screenshots/06_DNS_MX_Record.png)
-
 **Screenshot 7: DNS TXT Record**
 <img width="937" height="380" alt="image" src="https://github.com/user-attachments/assets/14dc0254-29e8-433f-9f18-27aca84d9686" />
-
-![DNS TXT Record](M1-Initial-Access/Screenshots/07_DNS_TXT_Record.png)
 
 ### 4.5 HTTP Header Analysis
 
@@ -131,8 +121,6 @@ This helped identify server information, response status, and other publicly ava
 **Screenshot 8: HTTP Header Analysis**
 <img width="427" height="181" alt="image" src="https://github.com/user-attachments/assets/802ecc32-1418-489b-8133-7b16fa624994" />
 
-![HTTP Header Analysis](M1-Initial-Access/Screenshots/08_HTTP_Header_Analysis.png)
-
 ### 4.6 Website Technology Identification
 
 WhatWeb was used to identify technologies and components associated with the target website.
@@ -140,8 +128,7 @@ WhatWeb was used to identify technologies and components associated with the tar
 This provided an overview of the publicly detectable web technologies.
 
 **Screenshot 9: WhatWeb Scan**
-
-![WhatWeb Scan](M1-Initial-Access/Screenshots/09_WhatWeb_Scan.png)
+<img width="937" height="97" alt="image" src="https://github.com/user-attachments/assets/f60672c7-6292-480b-902f-05e25425eaf5" />
 
 ### 4.7 M1 Observations
 
