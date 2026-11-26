@@ -117,7 +117,7 @@ The following records were examined:
 
 **Screenshot 7: DNS TXT Record**
 
-<img width="937" height="380" alt="image" src="https://github.com/user-attachments/assets/14dc0254-29e8-433f-9f18-27aca84d9686" />
+<img width="937" height="380" alt="image" src="https://github.com/user-attachments/assets/cae24a93-2f30-4789-876d-ae6e0d701bd3" />
 
 ### 4.5 HTTP Header Analysis
 
@@ -153,18 +153,18 @@ These observations established a foundation for the subsequent security assessme
 
 The objective of this module was to understand PDF password protection, perform password auditing on the provided training documents, and examine document metadata.
 
-### 4.10 Hash Extraction
+### 4.9 Hash Extraction
 
 PDF password hashes were extracted for use in the password auditing process.
 
 The extracted hash represents the information required by compatible auditing tools to test password candidates. It is not the original password itself.
 
-**Screenshot 2: PDF Hash Extraction**
+**Screenshot 1: PDF Hash Extraction**
 
 <img width="1896" height="867" alt="image" src="https://github.com/user-attachments/assets/9a32079c-c928-4bfd-a71e-b8867d128b43" />
 <img width="1901" height="870" alt="image" src="https://github.com/user-attachments/assets/109951e1-8bea-4032-b873-62564c3f0ed2" />
 
-**Screenshot 3: Password Audit**
+**Screenshot 2: Password Audit :**
 patient record 1 password cracked
 
 <img width="1896" height="862" alt="image" src="https://github.com/user-attachments/assets/ce5baf43-13c2-4eda-a8f2-c86c3725ef4f" />
@@ -177,16 +177,17 @@ patient record 3 password cracked
 
 <img width="985" height="472" alt="image" src="https://github.com/user-attachments/assets/ecb66706-12c9-4b72-ac42-24fd08d33a85" />
 
-### 4.12 PDF Decryption Using QPDF
+### 4.10 PDF Decryption Using QPDF
 
 After completing the authorized password audit, QPDF was used to decrypt the designated training PDF document.
 
 The decrypted output was saved separately for further examination.
 
 **Screenshot 4: PDF Decryption Using QPDF**
+
 <img width="937" height="727" alt="image" src="https://github.com/user-attachments/assets/44f023ce-2d0a-4778-acd5-ca667198b3b4" />
 
-### 4.13 PDF Metadata Examination
+### 4.11 PDF Metadata Examination
 
 ExifTool was used to examine the metadata of the PDF document.
 
@@ -196,7 +197,7 @@ Metadata analysis helps identify document properties and potentially sensitive i
 
 <img width="907" height="370" alt="image" src="https://github.com/user-attachments/assets/f8e5a24a-386c-4386-a596-512582747f3f" />
 
-### 4.14 M2 Observations
+### 4.12 M2 Observations
 
 This module demonstrated how password-protected documents can be assessed using password auditing utilities. It also highlighted the importance of strong passwords and careful management of document metadata.
 
@@ -204,11 +205,11 @@ This module demonstrated how password-protected documents can be assessed using 
 
 ## M3 – Critical Data Exposure
 
-### 4.15 Objective
+### 4.13 Objective
 
 The objective of this module was to investigate potential information disclosure through publicly accessible website resources and identify the security implications of exposed directories and backup files.
 
-### 4.16 Robots.txt Analysis
+### 4.14 Robots.txt Analysis
 
 The website's `robots.txt` file was examined using cURL.
 
@@ -226,7 +227,7 @@ The presence of these entries indicates disclosed directory names but does not i
 
 <img width="696" height="375" alt="image" src="https://github.com/user-attachments/assets/fc78d362-4beb-43fd-a7f1-0bf664e5d641" />
 
-### 4.17 Directory Listing Assessment
+### 4.15 Directory Listing Assessment
 
 The `/old/` directory was investigated to determine whether the web server exposed its directory contents.
 
@@ -236,10 +237,11 @@ Directory listing can reveal filenames and resources that should not be publicly
 
 <img width="1897" height="297" alt="image" src="https://github.com/user-attachments/assets/5b3bb7a0-3af4-44c8-9a81-aaa3f53ecaeb" />
 
-**Screenshot 2: Exposed Directory Listing**
+**Screenshot 3: Exposed Directory Listing**
+
 <img width="1897" height="622" alt="image" src="https://github.com/user-attachments/assets/d2c8987c-183f-4651-a444-fdd3e0ae3604" />
 
-### 4.18 Database Backup Exposure
+### 4.16 Database Backup Exposure
 
 A database backup resource was identified during the directory exposure assessment.
 
@@ -252,3 +254,20 @@ The assessment focused on documenting the exposure without downloading or disclo
 <img width="1881" height="750" alt="image" src="https://github.com/user-attachments/assets/9d5f074b-deaa-4773-abca-174a06115f2a" />
 <img width="1882" height="337" alt="image" src="https://github.com/user-attachments/assets/d9aaf9d3-c526-4d0a-ad16-b520f4d9f465" />
 
+5. Key Learning Outcomes
+
+Understood the initial reconnaissance process.
+
+Practiced PDF password security assessment.
+
+Learned to examine PDF metadata.
+
+Identified how publicly disclosed directory paths can reveal potential exposure.
+
+Understood the security risks associated with publicly accessible backup files.
+
+Improved technical documentation and vulnerability reporting skills.
+
+6. Conclusion
+
+Week 04 provided practical exposure to reconnaissance, document security assessment, information disclosure analysis, and penetration testing documentation. These exercises strengthened my understanding of identifying potential security weaknesses and communicating findings responsibly.
