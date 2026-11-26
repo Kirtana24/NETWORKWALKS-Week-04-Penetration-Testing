@@ -155,7 +155,7 @@ The objective of this module was to understand PDF password protection, perform 
 
 Lab reports available 
 
-<img width="1057" height="855" alt="image" src="https://github.com/user-attachments/assets/8b47edc2-1866-4c39-b35c-2b5b1b5ac22d" />
+<img width="1896" height="866" alt="image" src="https://github.com/user-attachments/assets/aae7009b-88ff-4895-a406-3a757e9220bd" />
 
 ### 4.9 Hash Extraction
 
